@@ -59,7 +59,7 @@ function App() {
       {!visible ? (
         <>
           <Col
-            // xs={8}
+            xs={16}
             sm={16}
             md={24}
             style={{ display: "flex", justifyContent: "center" }}
@@ -108,7 +108,7 @@ function App() {
         </>
       ) : (
         <Col
-          // xs={8}
+          xs={16}
           sm={16}
           md={24}
           style={{ display: "flex", justifyContent: "center" }}
@@ -124,29 +124,33 @@ function App() {
               marginTop: "10px",
               marginBottom: "100px",
               width: "70%",
-              minWidth: "700px",
+              // minWidth: "700px",
             }}
           >
             <p>
-              <Descriptions sm={16} md={24} bordered column={1}>
-                <Descriptions.Item label={<img src={item.Link} alt="imagem" />}>
-                  {item.Compound}
-                </Descriptions.Item>
-                <Descriptions.Item label="Name">
-                  {item.Compound}
-                </Descriptions.Item>
-                <Descriptions.Item label="Smiles">
-                  {item.Smiles}
-                </Descriptions.Item>
-                <Descriptions.Item label="Mol weight">
-                  {item.Molweight}
-                </Descriptions.Item>
-                <Descriptions.Item label="MOL">
-                  <Button type="primary" icon={<DownloadOutlined />}>
-                    Download Mol
-                  </Button>
-                </Descriptions.Item>
-              </Descriptions>
+              <Col sm={16} md={24}>
+                <Descriptions sm={16} md={24} bordered column={1}>
+                  <Descriptions.Item
+                    label={<img sm={16} md={24} src={item.Link} alt="imagem" />}
+                  >
+                    {item.Compound}
+                  </Descriptions.Item>
+                  <Descriptions.Item label="Name">
+                    {item.Compound}
+                  </Descriptions.Item>
+                  <Descriptions.Item label="Smiles">
+                    {item.Smiles}
+                  </Descriptions.Item>
+                  <Descriptions.Item label="Mol weight">
+                    {item.Molweight}
+                  </Descriptions.Item>
+                  <Descriptions.Item label="MOL">
+                    <Button type="primary" icon={<DownloadOutlined />}>
+                      Download Mol
+                    </Button>
+                  </Descriptions.Item>
+                </Descriptions>
+              </Col>
             </p>
           </Card>
         </Col>
