@@ -6,8 +6,10 @@ body {
 }
 
 .logo {
-  filter: drop-shadow(0 0 1px rgb(255, 255, 255)) saturate(50%) contrast(20%) brightness(180%)
-    brightness(100%);
+  filter: drop-shadow(0 0 2px rgb(255, 255, 255)) saturate(70%) contrast(5%)
+    brightness(180%);
+  width: 100%;
+  max-width: 400px;
 }
 
 .search {
