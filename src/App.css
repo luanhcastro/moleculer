@@ -1,20 +1,33 @@
 body {
-  background: url("./background.jpg");
-  background-size: cover;
+  background: url("./fundo2.jpg");
+  /* background-size: cover; */
+  /* background-image: linear-gradient( 96deg, rgba(0, 0, 0, 0.626) 26.8%, rgba(0, 0, 0, 0.56) 64% ); */
   height: 100%;
 }
 
 .logo {
-  filter: drop-shadow(0 0 3px rgb(255, 255, 255)) saturate(200%) invert(23%) contrast(140%) brightness(40%);
+  filter: drop-shadow(0 0 1px rgb(255, 255, 255)) saturate(50%) contrast(20%) brightness(180%)
+    brightness(100%);
 }
 
-.search{
+.search {
   width: 100%;
-  background-color:rgb(0, 122, 20);
-
+  background-color: rgb(0, 122, 20);
 }
 
-.ant-row .ant-col-24{
+.ant-row .ant-col-24 {
   display: flex;
   justify-content: center;
+}
+
+.hoverableCard {
+  z-index: 1;
+  transition: transform 0.2s;
+  transform: scale(1);
+}
+
+.hoverableCard:hover {
+  box-shadow: 0 0 20px #00000077;
+  transform: scale(1.1);
+  z-index: 2;
 }

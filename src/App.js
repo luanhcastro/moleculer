@@ -53,7 +53,14 @@ function App() {
         sm={16}
         md={24}
       >
-        <img class="logo" alt="Logo" src={logo} />
+        <img
+          sm={8}
+          md={24}
+          class="logo"
+          alt="Logo"
+          style={{ width: "100" }}
+          src={logo}
+        />
       </Col>
 
       {!visible ? (
@@ -83,16 +90,17 @@ function App() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Row
-              gutter={15}
+              gutter={50}
               style={{ display: "flex", justifyContent: "center" }}
             >
               {filteredData.map((item) => (
                 <Col>
                   <div onClick={() => showCard(item)}>
                     <Card
+                      className="hoverableCard"
                       hoverable
                       bordered
-                      style={{ width: 350, marginTop: 30 }}
+                      style={{ width: 320, marginTop: 30 }}
                       cover={<img alt="Logo" src={item.Link} />}
                     >
                       <Divider />
@@ -108,8 +116,8 @@ function App() {
         </>
       ) : (
         <Col
-          xs={16}
-          sm={16}
+          // xs={16}
+          // sm={16}
           md={24}
           style={{ display: "flex", justifyContent: "center" }}
         >
@@ -128,10 +136,16 @@ function App() {
             }}
           >
             <p>
-              <Col sm={16} md={24}>
-                <Descriptions sm={16} md={24} bordered column={1}>
+              <Col md={24}>
+                <Descriptions md={24} bordered column={1}>
                   <Descriptions.Item
-                    label={<img sm={16} md={24} src={item.Link} alt="imagem" />}
+                    label={
+                      <img
+                        style={{ width: "100%" }}
+                        src={item.Link}
+                        alt="imagem"
+                      />
+                    }
                   >
                     {item.Compound}
                   </Descriptions.Item>
