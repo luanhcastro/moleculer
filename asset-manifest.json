@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/moleculer/static/css/main.f383eb74.css",
+    "main.css": "/moleculer/static/css/main.f8a179f1.css",
     "main.js": "/moleculer/static/js/main.be2551c8.js",
     "static/js/787.2f5bb494.chunk.js": "/moleculer/static/js/787.2f5bb494.chunk.js",
     "static/media/background.jpg": "/moleculer/static/media/background.884102e738577e88fad5.jpg",
     "static/media/fundo2.jpg": "/moleculer/static/media/fundo2.6da467481005077e7f26.jpg",
     "static/media/logo.png": "/moleculer/static/media/logo.2767cf2658d2002026df.png",
     "index.html": "/moleculer/index.html",
-    "main.f383eb74.css.map": "/moleculer/static/css/main.f383eb74.css.map",
+    "main.f8a179f1.css.map": "/moleculer/static/css/main.f8a179f1.css.map",
     "main.be2551c8.js.map": "/moleculer/static/js/main.be2551c8.js.map",
     "787.2f5bb494.chunk.js.map": "/moleculer/static/js/787.2f5bb494.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f383eb74.css",
+    "static/css/main.f8a179f1.css",
     "static/js/main.be2551c8.js"
   ]
 }
