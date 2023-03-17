@@ -32,7 +32,7 @@ body {
   z-index: 1;
   transition: transform 0.2s;
   transform: scale(1);
-  opacity: 90%;
+  opacity: 85%;
 
 }
 
