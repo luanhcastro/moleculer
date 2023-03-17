@@ -41,6 +41,11 @@ function App() {
     }
   };
 
+  const closeCard = () => {
+    setData(data);
+    setVisible(false);
+  }
+
   return (
     <Row class="body" style={{ display: "flex", justifyContent: "center" }}>
       <Col
@@ -48,6 +53,7 @@ function App() {
           display: "flex",
           justifyContent: "center",
           marginTop: 80,
+          padding: 10
         }}
         // xs={8}
         sm={16}
@@ -72,7 +78,8 @@ function App() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Input
-              style={{ width: 800, marginTop: 100 }}
+              className="inputSearch"
+              style={{ padding: 10, width: 800, marginTop: 100, marginBottom: 15 }}
               onChange={(e) => filterData(e.target.value)}
               allowClear={true}
               placeholder="Search for molecules"
@@ -87,11 +94,11 @@ function App() {
             // xs={8}
             sm={16}
             md={24}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ padding: 10, display: "flex", justifyContent: "center" }}
           >
             <Row
               gutter={50}
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{ display: "flex", justifyContent: "center", marginBottom: 30 }}
             >
               {filteredData.map((item) => (
                 <Col>
@@ -100,12 +107,12 @@ function App() {
                       className="hoverableCard"
                       hoverable
                       bordered
-                      style={{ width: 320, marginTop: 30 }}
+                      style={{ maxWidth: 300, minWidth: 100, marginTop: 30 }}
                       cover={<img alt="Logo" src={item.Link} />}
                     >
                       <Divider />
                       <p>
-                        <Meta title={item.Compound} />
+                        <Meta className="cardText" title={item.Compound} />
                       </p>
                     </Card>
                   </div>
@@ -119,11 +126,11 @@ function App() {
           // xs={16}
           // sm={16}
           md={24}
-          style={{ display: "flex", justifyContent: "center" }}
+          style={{ display: "flex", justifyContent: "center", opacity: "100%" }}
         >
-          <Card
+          <Card sm={16}
             extra={
-              <Button type="link" danger onClick={() => setVisible(false)}>
+              <Button type="link" danger onClick={() => closeCard()}>
                 <CloseCircleOutlined />
               </Button>
             }
@@ -133,11 +140,12 @@ function App() {
               marginBottom: "100px",
               width: "70%",
               // minWidth: "700px",
+              display: "table",
             }}
           >
             <p>
-              <Col md={24}>
-                <Descriptions md={24} bordered column={1}>
+              <Col sm={16} md={24}>
+                <Descriptions  sm={16} md={24} bordered column={1}>
                   <Descriptions.Item
                     label={
                       <img
