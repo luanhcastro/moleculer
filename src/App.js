@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import {
   List,
@@ -16,7 +16,6 @@ import {
   CloseCircleOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
-import background from "./background.jpg";
 import logo from "./images/logo.png";
 
 function App() {
@@ -25,12 +24,27 @@ function App() {
   const [visible, setVisible] = useState(null);
   const [filteredData, setData] = useState(data);
 
-  const { Search } = Input;
-
   const showCard = (item) => {
     setItem(item);
     setVisible(true);
   };
+
+
+  async function downloadSDF(smiles) {
+    const response = await fetch(
+      `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${encodeURIComponent(
+        smiles
+      )}/SDF`
+    );
+    const data = await response.blob();
+    const url = window.URL.createObjectURL(data);
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", "mol.sdf");
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 
   const filterData = (value) => {
     if (!value) setData(data);
@@ -44,7 +58,7 @@ function App() {
   const closeCard = () => {
     setData(data);
     setVisible(false);
-  }
+  };
 
   return (
     <Row class="body" style={{ display: "flex", justifyContent: "center" }}>
@@ -53,7 +67,7 @@ function App() {
           display: "flex",
           justifyContent: "center",
           marginTop: 80,
-          padding: 10
+          padding: 10,
         }}
         // xs={8}
         sm={16}
@@ -79,7 +93,12 @@ function App() {
           >
             <Input
               className="inputSearch"
-              style={{ padding: 10, width: 800, marginTop: 100, marginBottom: 15 }}
+              style={{
+                padding: 10,
+                width: 800,
+                marginTop: 100,
+                marginBottom: 15,
+              }}
               onChange={(e) => filterData(e.target.value)}
               allowClear={true}
               placeholder="Search for molecules"
@@ -98,7 +117,11 @@ function App() {
           >
             <Row
               gutter={50}
-              style={{ display: "flex", justifyContent: "center", marginBottom: 30 }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: 30,
+              }}
             >
               {filteredData.map((item) => (
                 <Col>
@@ -128,7 +151,8 @@ function App() {
           md={24}
           style={{ display: "flex", justifyContent: "center", opacity: "100%" }}
         >
-          <Card sm={16}
+          <Card
+            sm={16}
             extra={
               <Button type="link" danger onClick={() => closeCard()}>
                 <CloseCircleOutlined />
@@ -139,13 +163,12 @@ function App() {
               marginTop: "10px",
               marginBottom: "100px",
               width: "70%",
-              // minWidth: "700px",
               display: "table",
             }}
           >
             <p>
               <Col sm={16} md={24}>
-                <Descriptions  sm={16} md={24} bordered column={1}>
+                <Descriptions sm={16} md={24} bordered column={1}>
                   <Descriptions.Item
                     label={
                       <img
@@ -166,9 +189,13 @@ function App() {
                   <Descriptions.Item label="Mol weight">
                     {item.Molweight}
                   </Descriptions.Item>
-                  <Descriptions.Item label="MOL">
-                    <Button type="primary" icon={<DownloadOutlined />}>
-                      Download Mol
+                  <Descriptions.Item label="sdf File">
+                    <Button
+                      type="primary"
+                      onClick={() => downloadSDF(item.Smiles)}
+                      icon={<DownloadOutlined />}
+                    >
+                      Download .sdf
                     </Button>
                   </Descriptions.Item>
                 </Descriptions>
