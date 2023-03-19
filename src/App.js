@@ -30,7 +30,7 @@ function App() {
   };
 
 
-  async function downloadSDF(smiles) {
+  async function downloadSDF(molName, smiles) {
     const response = await fetch(
       `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${encodeURIComponent(
         smiles
@@ -40,7 +40,7 @@ function App() {
     const url = window.URL.createObjectURL(data);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", "mol.sdf");
+    link.setAttribute("download",`${molName}.sdf`);
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -192,7 +192,7 @@ function App() {
                   <Descriptions.Item label="sdf File">
                     <Button
                       type="primary"
-                      onClick={() => downloadSDF(item.Smiles)}
+                      onClick={() => downloadSDF(item.Compound, item.Smiles)}
                       icon={<DownloadOutlined />}
                     >
                       Download .sdf
