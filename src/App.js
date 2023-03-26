@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import {
-  List,
+  message,
   Col,
   Row,
   Button,
@@ -29,21 +29,28 @@ function App() {
     setVisible(true);
   };
 
+  const handleDownloadSDF = (molName, smiles) => {
+    downloadSDF(molName, smiles, () => {
+      message.error("Error downloading SDF");
+    });
+  };
 
-  async function downloadSDF(molName, smiles) {
+  async function downloadSDF(molName, smiles, onError) {
     const response = await fetch(
       `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${encodeURIComponent(
         smiles
       )}/SDF`
     );
-    const data = await response.blob();
-    const url = window.URL.createObjectURL(data);
-    const link = document.createElement("a");
-    link.href = url;
-    link.setAttribute("download",`${molName}.sdf`);
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    if (response.status === 200) {
+      const data = await response.blob();
+      const url = window.URL.createObjectURL(data);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", `${molName}.sdf`);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } else onError();
   }
 
   const filterData = (value) => {
@@ -189,14 +196,14 @@ function App() {
                   <Descriptions.Item label="Mol weight">
                     {item.Molweight}
                   </Descriptions.Item>
-                  <Descriptions.Item label="sdf File">
+                  <Descriptions.Item label="Files">
                     <Button
                       type="primary"
-                      onClick={() => downloadSDF(item.Compound, item.Smiles)}
+                      onClick={() =>
+                        handleDownloadSDF(item.Compound, item.Smiles)
+                      }
                       icon={<DownloadOutlined />}
-                    >
-                      Download .sdf
-                    </Button>
+                    > Download .sdf</Button>
                   </Descriptions.Item>
                 </Descriptions>
               </Col>
