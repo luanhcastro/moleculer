@@ -17,14 +17,15 @@ import {
   SearchOutlined,
 } from "@ant-design/icons";
 import logo from "./images/logo.png";
-
+import MolViewer from "./molViewer";
 function App() {
   const { Meta } = Card;
   const [item, setItem] = useState(null);
   const [visible, setVisible] = useState(null);
   const [filteredData, setData] = useState(data);
 
-  const showCard = (item) => {
+
+  const showCard = async (item) => {
     setItem(item);
     setVisible(true);
   };
@@ -203,9 +204,13 @@ function App() {
                         handleDownloadSDF(item.Compound, item.Smiles)
                       }
                       icon={<DownloadOutlined />}
-                    > Download .sdf</Button>
+                    >
+                      {" "}
+                      Download .sdf
+                    </Button>
                   </Descriptions.Item>
                 </Descriptions>
+                <MolViewer></MolViewer >
               </Col>
             </p>
           </Card>
