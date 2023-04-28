@@ -13,7 +13,7 @@ const MolViewer = () => {
     <Card>
       <iframe
         title="NGL Viewer"
-        src="http://nglviewer.org/ngl/"
+        src="https://nglviewer.org/ngl/"
         style={{ marginTop: 30, width: '100%', height: '600px', border: 'none' }}
       />
     </Card>
