@@ -1,0 +1,322 @@
+
+051|LMW3_p|sdf|51|dock136
+  -GOLD-   6 722 5363D 1   1.00000     0.00000
+
+ 38 41  0  0  0  0  0  0  0  0  1 V2000
+   13.3943   -1.0415    4.1768 O   0  0  0  0  0  0  0  0  0  0  0  0
+   13.1650   -2.3359    3.8271 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.1849   -0.4737    4.4730 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.8089   -2.6199    3.8929 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1393   -3.2571    3.4558 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.2102    0.9314    4.8768 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.1842   -1.4148    4.3103 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.3756   -3.9175    3.5658 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.6911   -4.5432    3.1332 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.7410    1.3129    6.1451 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.7045    1.9317    4.0043 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.3284   -4.8806    3.1786 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.7819    2.6497    6.4880 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.7345    3.2810    4.3783 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.8876   -6.2866    2.8407 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.3673    3.1769    7.6718 O   0  0  0  0  0  0  0  0  0  0  0  0
+   12.2648    3.6069    5.6294 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5917   -7.1009    4.1028 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.6453    4.5765    7.4572 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.2159    4.8562    6.1622 O   0  0  0  0  0  0  0  0  0  0  0  0
+   12.8177   -7.2341    4.9958 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.5056   -8.0268    6.1319 O   0  0  0  0  0  0  0  0  0  0  0  0
+   15.1395   -3.0053    3.4201 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1742   -1.2686    4.4634 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.3736   -4.1608    3.6087 H   0  0  0  0  0  0  0  0  0  0  0  0
+   14.3786   -5.2610    2.8553 H   0  0  0  0  0  0  0  0  0  0  0  0
+   11.3741    0.6098    6.8055 H   0  0  0  0  0  0  0  0  0  0  0  0
+   13.0508    1.6598    3.0709 H   0  0  0  0  0  0  0  0  0  0  0  0
+   13.0960    4.0051    3.7380 H   0  0  0  0  0  0  0  0  0  0  0  0
+   12.6653   -6.7716    2.2886 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.9897   -6.2268    2.2619 H   0  0  0  0  0  0  0  0  0  0  0  0
+   11.2661   -8.0786    3.8148 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.8333   -6.5882    4.6569 H   0  0  0  0  0  0  0  0  0  0  0  0
+   12.3328    4.9047    8.2086 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.7109    5.0953    7.5089 H   0  0  0  0  0  0  0  0  0  0  0  0
+   13.1301   -6.2623    5.3165 H   0  0  0  0  0  0  0  0  0  0  0  0
+   13.6051   -7.7041    4.4444 H   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3025   -8.1457    6.6719 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  3  1  0  0  0  0
+  2  4  2  0  0  0  0
+  2  5  1  0  0  0  0
+  3  6  1  0  0  0  0
+  3  7  2  0  0  0  0
+  4  8  1  0  0  0  0
+  4  7  1  0  0  0  0
+  5  9  2  0  0  0  0
+  5 23  1  0  0  0  0
+  6 10  2  0  0  0  0
+  6 11  1  0  0  0  0
+  7 24  1  0  0  0  0
+  8 12  2  0  0  0  0
+  8 25  1  0  0  0  0
+  9 12  1  0  0  0  0
+  9 26  1  0  0  0  0
+ 10 13  1  0  0  0  0
+ 10 27  1  0  0  0  0
+ 11 14  2  0  0  0  0
+ 11 28  1  0  0  0  0
+ 12 15  1  0  0  0  0
+ 13 16  1  0  0  0  0
+ 13 17  2  0  0  0  0
+ 14 17  1  0  0  0  0
+ 14 29  1  0  0  0  0
+ 15 18  1  0  0  0  0
+ 15 30  1  0  0  0  0
+ 15 31  1  0  0  0  0
+ 16 19  1  0  0  0  0
+ 17 20  1  0  0  0  0
+ 18 21  1  0  0  0  0
+ 18 32  1  0  0  0  0
+ 18 33  1  0  0  0  0
+ 19 20  1  0  0  0  0
+ 19 34  1  0  0  0  0
+ 19 35  1  0  0  0  0
+ 21 22  1  0  0  0  0
+ 21 36  1  0  0  0  0
+ 21 37  1  0  0  0  0
+ 22 38  1  0  0  0  0
+M  END
+>  <Code-name>
+051
+
+>  <Compound>
+Demethoxyegonol
+
+>  <Specie>
+Laetiporus sulphureus
+
+>  <Reference>
+SULKOWSKA-ZIAJA et
+al., 2005
+
+>  <Organism>
+Antitumoral Activity
+
+>  <Smiles>
+OCCCc(cc1)cc2c1oc(-c(cc1)cc3c1OCO3)c2
+
+>  <MMFF94 Energy>
+36.647
+
+>  <Total Molweight>
+296.321
+
+>  <Molweight>
+296.321
+
+>  <Monoisotopic Mass>
+296.104860
+
+>  <cLogP>
+4.26
+
+>  <cLogS>
+-5.53
+
+>  <H-Acceptors>
+4
+
+>  <H-Donors>
+1
+
+>  <Total Surface Area>
+225.2
+
+>  <Relative PSA>
+0.20964
+
+>  <Polar Surface Area>
+51.83
+
+>  <Druglikeness>
+-6.695
+
+>  <Mutagenic>
+none
+
+>  <Tumorigenic>
+none
+
+>  <Reproductive Effective>
+high
+
+>  <Irritant>
+none
+
+>  <Nasty Functions>
+
+
+>  <Shape Index>
+0.63636
+
+>  <Molecular Flexibility>
+0.33748
+
+>  <Molecular Complexity>
+0.81243
+
+>  <Fragments>
+1
+
+>  <Non-H Atoms>
+22
+
+>  <Non-C/H Atoms>
+4
+
+>  <Metal-Atoms>
+0
+
+>  <Electronegative Atoms>
+4
+
+>  <Stereo Centers>
+0
+
+>  <Rotatable Bonds>
+4
+
+>  <Rings Closures>
+4
+
+>  <Small Rings>
+4
+
+>  <Aromatic Rings>
+3
+
+>  <Aromatic Atoms>
+15
+
+>  <sp3-Atoms>
+7
+
+>  <Symmetric atoms>
+0
+
+>  <Amides>
+0
+
+>  <Amines>
+0
+
+>  <Alkyl-Amines>
+0
+
+>  <Aromatic Amines>
+0
+
+>  <Aromatic Nitrogens>
+0
+
+>  <Basic Nitrogens>
+0
+
+>  <Acidic Oxygens>
+0
+
+>  <Stereo Configuration>
+
+
+> <Gold.Version>
+5.8.1
+
+> <Gold.Id.Protein>
+ID_2|Prot_COX2_5IKQ_Alig|mol2
+
+> <Gold.Goldscore.Fitness>
+59.7256
+
+> <Gold.Goldscore.Internal.Vdw>
+-0.6857
+
+> <Gold.Goldscore.Internal.Torsion>
+-5.2611
+
+> <Gold.Goldscore.External.Vdw>
+45.1115
+
+> <Gold.Goldscore.Internal.HBond>
+0.0000
+
+> <Gold.Goldscore.External.HBond>
+1.8769
+
+> <Gold.Goldscore.Internal.Correction>
+-1.7672
+
+> <Gold.Goldscore.Hbonds>
+donor molecule, donor type, donor heavy atom, donor atom, acceptor molecule, acceptor atom, score
+      P1  H  5176  5185       L1     1  0.94
+
+> <Gold.Goldscore.Internal.Vdw.Weighted>
+-0.6857
+
+> <Gold.Goldscore.Internal.Torsion.Weighted>
+-5.2611
+
+> <Gold.Goldscore.External.Vdw.Weighted>
+62.0283
+
+> <Gold.Goldscore.Internal.HBond.Weighted>
+0.0000
+
+> <Gold.Goldscore.External.HBond.Weighted>
+1.8769
+
+> <Gold.Goldscore.Internal.Correction.Weighted>
+-1.7672
+
+> <Gold.Protein.RotatedTorsions>
+[ 5077 5068 5067 5065 ] final -174.07 input  179.94 | X-H torsion
+[ 5157 5152 5151 5148 ] final -172.78 input -179.92 | X-H torsion
+[ 5185 5176 5175 5173 ] final   87.18 input -179.99 | X-H torsion
+[ 5712 5703 5702 5700 ] final  134.57 input  180.00 | X-H torsion
+[ 8036 8031 8030 8027 ] final -100.38 input -179.94 | X-H torsion
+[ 2749 2745 2743 2740 ] final  103.40 input  -60.05 | X-H torsion
+[ 1366 1361 1360 1357 ] final -149.26 input  -60.09 | X-H torsion
+[ 2556 2551 2550 2547 ] final   89.80 input   59.97 | X-H torsion
+
+> <Gold.Protein.ActiveResidues>
+ PRO86   VAL89   HIS90   LEU93   THR94   ILE112  MET113  TYR115  VAL116  LEU117 
+ THR118  SER119  ARG120  SER121  LEU123  ILE124  GLN192  SER194  PHE198  PHE201 
+ ALA202  GLN203  PHE205  THR206  PHE209  PHE210  VAL228  ILE341  ILE343  VAL344 
+ ILE345  GLU346  ASP347  TYR348  VAL349  GLN350  HIS351  LEU352  SER353  GLY354 
+ TYR355  PHE357  LEU359  LYS360  GLU380  PHE381  ASN382  THR383  LEU384  TYR385 
+ HIS386  TRP387  LEU390  VAL434  LEU507  ARG513  ALA516  ILE517  PHE518  GLY519 
+ GLU520  THR521  MET522  VAL523  GLU524  VAL525  GLY526  ALA527  PRO528  PHE529 
+ SER530  LEU531  LYS532  GLY533  LEU534  MET535  COH609 
+
+> <Gold.Protein.RotatedAtoms>
+   18.7218    7.0080    3.2329 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 1366 bound_to 1361
+    5.0849  -10.1383    7.0267 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 2556 bound_to 2551
+   -3.6219    0.0562   -0.1758 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 2749 bound_to 2745
+    1.9895   -1.6347    3.6906 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 5077 bound_to 5068
+   12.3022   -1.3439    9.2264 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 5157 bound_to 5152
+   15.0875   -0.5872    4.7144 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 5185 bound_to 5176
+    3.0416   -0.2156    2.3678 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 5712 bound_to 5703
+    6.2462    4.6170    3.7073 H   0  0  0  0  0  0  0  0  0  0  0  0  # atno 8036 bound_to 8031
+    0.5323   -1.7303    4.0495 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8267 bound_to 5068
+    1.5696   -2.9808    4.2131 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8268 bound_to 5068
+   12.8579   -2.7424    9.2067 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8279 bound_to 5152
+   11.2621   -2.4251    9.3460 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8280 bound_to 5152
+   16.5444   -0.9536    4.7581 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8281 bound_to 5176
+   15.9947    0.5422    5.1146 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8282 bound_to 5176
+    1.9945   -1.1792    2.8513 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8283 bound_to 5703
+    1.7265    0.4255    2.7117 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8284 bound_to 5703
+    5.1959    3.5870    3.3977 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8309 bound_to 8031
+    4.9217    5.1933    3.2907 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8310 bound_to 8031
+   -4.1316    0.1163    1.2384 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8323 bound_to 2745
+   -2.7416   -0.6364    0.8285 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8324 bound_to 2745
+   18.2469    6.7015    1.8384 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8335 bound_to 1361
+   17.5551    7.8428    2.7793 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8336 bound_to 1361
+    4.9778   -9.3367    8.2956 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8342 bound_to 2551
+    4.4695   -8.7769    6.8482 LP  0  0  0  0  0  0  0  0  0  0  0  0  # atno 8343 bound_to 2551
+
