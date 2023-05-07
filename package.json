@@ -30,7 +30,7 @@
     ]
   },
   "public": {
-    "sdfFiles": "public/sdfFiles"
+    "sdfFiles": "/sdfFiles"
   },
   "browserslist": {
     "production": [
