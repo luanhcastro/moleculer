@@ -38,7 +38,7 @@ function App() {
 
   async function downloadSDF(molName, number, onError) {
     const intNumber = parseInt(number);
-    const url = '/sdfFiles/' + intNumber + '.sdf';
+    const url = 'https://github.com/luanhcastro/moleculer/sdfFiles/' + intNumber + '.sdf';
   
     try {
       const link = document.createElement('a');
