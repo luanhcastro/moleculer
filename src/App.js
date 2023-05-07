@@ -38,11 +38,21 @@ function App() {
 
   async function downloadSDF(molName, number, onError) {
     const intNumber = parseInt(number);
-    const url = 'https://github.com/luanhcastro/moleculer/sdfFiles/' + intNumber + '.sdf';
+    const url = 'https://luanhcastro.github.io/moleculer/sdfFiles/' + intNumber + '.sdf';
   
     try {
+      // Faz o download do arquivo usando o método fetch()
+      const response = await fetch(url);
+  
+      // Obtém o conteúdo do arquivo como uma string
+      const content = await response.text();
+  
+      // Cria um novo arquivo com o conteúdo e força o download desse novo arquivo
+      const blob = new Blob([content], {type: 'text/plain'});
+      const file = new File([blob], molName + '.sdf', {type: 'text/plain'});
+      const fileUrl = URL.createObjectURL(file);
       const link = document.createElement('a');
-      link.href = url;
+      link.href = fileUrl;
       link.download = molName + '.sdf';
       document.body.appendChild(link);
       link.click();
@@ -51,8 +61,6 @@ function App() {
       onError();
     }
   }
-  
-
   const filterData = (value) => {
     if (!value) setData(data);
     else {

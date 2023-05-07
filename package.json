@@ -29,9 +29,6 @@
       "react-app/jest"
     ]
   },
-  "public": {
-    "sdfFiles": "/sdfFiles"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
