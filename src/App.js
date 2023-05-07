@@ -30,29 +30,23 @@ function App() {
     setVisible(true);
   };
 
-  const handleDownloadSDF = (molName, smiles) => {
-    downloadSDF(molName, smiles, () => {
+  const handleDownloadSDF = (molName, number) => {
+    downloadSDF(molName, number, () => {
       message.error("Error downloading SDF");
     });
   };
 
-  async function downloadSDF(molName, smiles, onError) {
-    const response = await fetch(
-      `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${encodeURIComponent(
-        smiles
-      )}/SDF`
-    );
-    if (response.status === 200) {
-      const data = await response.blob();
-      const url = window.URL.createObjectURL(data);
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", `${molName}.sdf`);
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    } else onError();
+  async function downloadSDF(molName, number, onError) {
+    const intNumber = parseInt(number);
+  const url = '/sdfFiles/' + intNumber + '.sdf';
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = molName + '.sdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
   }
+  
 
   const filterData = (value) => {
     if (!value) setData(data);
@@ -201,7 +195,7 @@ function App() {
                     <Button
                       type="primary"
                       onClick={() =>
-                        handleDownloadSDF(item.Compound, item.Smiles)
+                        handleDownloadSDF(item.Compound, item.Moleculas)
                       }
                       icon={<DownloadOutlined />}
                     >
