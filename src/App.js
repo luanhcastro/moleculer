@@ -38,13 +38,18 @@ function App() {
 
   async function downloadSDF(molName, number, onError) {
     const intNumber = parseInt(number);
-  const url = '/sdfFiles/' + intNumber + '.sdf';
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = molName + '.sdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+    const url = '/sdfFiles/' + intNumber + '.sdf';
+  
+    try {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = molName + '.sdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      onError();
+    }
   }
   
 
