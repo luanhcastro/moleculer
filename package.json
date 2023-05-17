@@ -1,7 +1,7 @@
 {
   "name": "moleculer",
   "version": "0.1.0",
-  "homepage": "https://luanhcastro.github.io/moleculer",
+  "homepage": "https://cShiraishi.github.io/moleculer",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
